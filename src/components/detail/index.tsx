@@ -4,19 +4,19 @@ import { FC, useContext, useEffect, useState } from "react";
 import { Button } from "../button";
 import { Box, Modal, Typography } from "@mui/material";
 import TextInput from "../TextInput";
-import { BookingDetailsProps } from "@/app/types/bookingDetails";
 import { Form, Formik } from "formik";
 import * as yup from 'yup';
 import moment from "moment";
-import { MyContext } from "@/app/context/store";
 import Loader from "../loader";
 import { format } from "date-fns";
 import { doc, setDoc } from "firebase/firestore";
-import db from "@/app/firebase";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-import { userProps } from "@/app/types/user";
 import CustomSnackbar from "../snackbar";
 import styles from "./styles";
+import { BookingDetailsProps } from "@/types/bookingDetails";
+import { MyContext } from "@/context/store";
+import { userProps } from "@/types/user";
+import db from "@/firebase";
 
 const INITIAL_VALUES: BookingDetailsProps = {
     bookingId: '',

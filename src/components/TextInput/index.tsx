@@ -2,7 +2,7 @@
 import { ChangeEvent, FC} from "react";
 import { TextField } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { TextInputProps } from "@/app/types/textInput";
+import { TextInputProps } from "@/types/textInput";
 
 
 const useStyles = makeStyles((theme) => ({

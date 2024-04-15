@@ -24,7 +24,7 @@ const Header: FC = () => {
         <Image alt="user" src='/assets/icons/InfoCircle.svg' width={23.19} height={24} className={styles.infoIcon} />
         <Image
           alt="user"
-          src={user ? user?.image : '/assets/images/avatar.png'}
+          src={user ? user.image : '/assets/images/avatar.png'}
           height={42}
           width={42}
           className={styles.avatar}

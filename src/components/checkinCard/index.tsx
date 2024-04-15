@@ -2,9 +2,9 @@ import Image from "next/image";
 import { FC, useContext } from "react";
 import { Button } from "../button";
 import { Box, Typography } from "@mui/material";
-import { CheckinCardProps } from "@/app/types/checkInCard";
-import { MyContext } from "@/app/context/store";
 import styles from './styles';
+import { CheckinCardProps } from "@/types/checkInCard";
+import { MyContext } from "@/context/store";
 
 const CheckinCard: FC<CheckinCardProps> = (props) => {
     const { id, title, image, date, owner, avatar } = props;

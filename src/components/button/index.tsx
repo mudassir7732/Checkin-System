@@ -2,7 +2,7 @@
 import React, { FC } from "react";
 import { Button } from "@mui/material";
 import { styled } from "@mui/system";
-import { CustomButtonProps } from "@/app/types/customButton";
+import { CustomButtonProps } from "@/types/customButton";
 
 const CustomButton: FC<CustomButtonProps> = (props) => {
     const ColorButton = styled(Button)(({ theme }) => ({

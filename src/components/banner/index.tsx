@@ -2,8 +2,8 @@ import { Box, Typography } from "@mui/material";
 import { FC, useContext } from "react";
 import { Button } from "../button";
 import AddCheckIn from "../addCheckin";
-import { MyContext } from "@/app/context/store";
 import styles from './styles'
+import { MyContext } from "@/context/store";
 
 const Banner: FC = () => {
   const { setCheckin } = useContext(MyContext);

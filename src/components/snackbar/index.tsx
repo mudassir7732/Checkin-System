@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import Snackbar from '@mui/material/Snackbar';
-import { SnackbarProps } from '@/app/types/snackbar';
+import Snackbar, { SnackbarProps } from '@mui/material/Snackbar';
 
 const CustomSnackbar: React.FC<SnackbarProps> = ({ message }) => {
     const [isOpen, setIsOpen] = React.useState<boolean>(false);

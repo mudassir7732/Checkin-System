@@ -4,20 +4,20 @@ import { FC, useContext, useState } from "react";
 import TextInput from "../TextInput";
 import { Button } from "../button";
 import { Box, Modal, Typography } from "@mui/material";
-import { MyContext } from "@/app/context/store";
 import { Form, Formik } from "formik";
 import * as yup from 'yup';
-import { CheckInProps } from "@/app/types/checkIn";
 import { v4 as uuidv4 } from 'uuid';
 import { doc, setDoc } from "firebase/firestore";
 import { ref, getStorage, getDownloadURL, uploadBytes } from 'firebase/storage';
-import db from "@/app/firebase";
 import { format } from "date-fns";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import Loader from "../loader";
-import { userProps } from "@/app/types/user";
 import CustomSnackbar from "../snackbar";
 import styles from './styles';
+import { CheckInProps } from "@/types/checkIn";
+import { MyContext } from "@/context/store";
+import { userProps } from "@/types/user";
+import db from "@/firebase";
 
 const INITIAL_VALUES: CheckInProps = {
     title: '',
@@ -126,7 +126,7 @@ const AddCheckIn: FC = () => {
                                             Upload Image
                                         </Typography>
                                         <Box className={`flex flex-col items-start w-full `}>
-                                            <Box className={`${styles.imageInput} ${ errors.image ? 'border-[#d32f2f]' : 'border-[#b4b4b4]'} `}>
+                                            <Box className={`${styles.imageInput} ${errors.image ? 'border-[#d32f2f]' : 'border-[#b4b4b4]'} `}>
                                                 <input
                                                     type="file"
                                                     name="image"

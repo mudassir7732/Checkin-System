@@ -1,14 +1,14 @@
 "use client"
 import Image from "next/image";
-import CheckinCard from "./components/checkinCard";
 import { Box, Typography } from "@mui/material";
-import Banner from "./components/banner";
 import { collection, onSnapshot } from "firebase/firestore";
-import db from "./firebase";
 import { useEffect, useState } from "react";
-import { firebaseProps } from "./types/firebaseData";
-import Detail from "./components/detail";
 import styles from './styles';
+import db from "@/firebase";
+import { firebaseProps } from "@/types/firebaseData";
+import Banner from "@/components/banner";
+import CheckinCard from "@/components/checkinCard";
+import Detail from "@/components/detail";
 
 const Home = () => {
   const [data, setData] = useState<firebaseProps[]>([]);
