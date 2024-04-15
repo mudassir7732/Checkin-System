@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Roboto Flex', sans-serif !important;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.banner{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../public/assets/images/Rectangle 2.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.loader{
+  pointer-events: none;
+}
+
+.modal{
+  pointer-events: auto;
+}
+
+.card {
+  box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.1); 
+}
+
+.header{
+  box-shadow: 8px 15px 15px 0 rgba(0, 0, 0, 0.04);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
