@@ -17,7 +17,7 @@ const Header: FC = () => {
 
   return (
     <Box className={styles.container}>
-      <Image alt="user" src='/assets/logo/logo2.svg' width={53.19} height={55} className="h-[54px] w-[53.19px]" />
+      <Image alt="user" src='/assets/logo/logo.svg' width={53.19} height={55} className="h-[54px] w-[53.19px]" />
       <Box className='flex flex-row items-center'>
         <Button title='Feedback' variant="contained" className="hidden sm:block mr-[25.12px]" type="button" />
         <Image alt="user" src='/assets/icons/Bell.svg' width={23.19} height={24} className={styles.bellIcon} />
