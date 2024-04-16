@@ -24,7 +24,7 @@ const CheckinCard: FC<CheckinCardProps> = (props) => {
                 {date}
             </Typography>
             <Box className={styles.owner}>
-                <Image alt="user" src={avatar} width={32} height={32} className="rounded-full h-[32px] w-[32px]" />
+                <Image alt="user" src='/assets/images/Avatar2.png' width={32} height={32} className="rounded-full h-[32px] w-[32px]" />
                 <Typography className={styles.name}>
                     Owner: {owner}
                 </Typography>
