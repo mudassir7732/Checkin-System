@@ -18,7 +18,8 @@ const Banner: FC = () => {
   return (
     <Box className={styles.container}>
       <Typography className={styles.title}>
-        Hi!👋{user?.name}
+        {/* Hi!👋{user?.name} */}
+        Hi!👋John Doe
       </Typography>
       <Typography className={styles.text}>
         Lorem ipsus dolor sit amen, something important to say here

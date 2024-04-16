@@ -35,17 +35,18 @@ const AddCheckIn: FC = () => {
     const { openCheckin, setCheckin } = useContext(MyContext);
 
     const handleInput = async (values: CheckInProps) => {
-        const userString = localStorage.getItem('user');
-        let user;
-        if (userString !== null) {
-            user = JSON.parse(userString);
-        }
-        if (!user?.name || !user?.image) {
-            userAuthentication();
-        }
-        else {
+        const user = {name:'John Doe', image:'https://firebasestorage.googleapis.com/v0/b/wonder-crafts-2c771.appspot.com/o/checkins%2Fe005d7db-26d7-43d3-abc3-b6adc6ab4ec7?alt=media&token=fb81d1af-ad55-4398-aa22-aa131578c91c'}
+        // const userString = localStorage.getItem('user');
+        // let user;
+        // if (userString !== null) {
+        //     user = JSON.parse(userString);
+        // }
+        // if (!user?.name || !user?.image) {
+        //     userAuthentication();
+        // }
+        // else {
             uploadData(values, user);
-        }
+        // }
     };
 
     const userAuthentication = () => {
@@ -85,8 +86,9 @@ const AddCheckIn: FC = () => {
                 image: imageUrl,
                 date: formattedDate,
             });
-            setSnackbarMessage('Successfully Updated');
+            setSnackbarMessage('Successfully Added');
             setCheckin(false);
+            console.log('Success')
         }
         catch (error) {
             console.log('Failed', error);

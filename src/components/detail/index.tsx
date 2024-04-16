@@ -26,7 +26,7 @@ const INITIAL_VALUES: BookingDetailsProps = {
 }
 
 const VALIDATION_SCHEMA = yup.object().shape({
-    bookingId: yup.number().moreThan(0, "Required").required('Required'),
+    bookingId: yup.string().required('required'),
     rooms: yup.number().moreThan(0, "Required").required('Required'),
     guests: yup.number().moreThan(0, "Required").required('Required'),
     bookingDate: yup.date().required('Required')
@@ -43,17 +43,17 @@ const Detail: FC = () => {
     }, [detailProps])
 
     const handleBooking = (values: BookingDetailsProps) => {
-        const userString = localStorage.getItem('user');
-        let user;
-        if (userString !== null) {
-            user = JSON.parse(userString);
-        }
-        if (!user?.name || !user?.image) {
-            userAuthentication();
-        }
-        else {
+        // const userString = localStorage.getItem('user');
+        // let user;
+        // if (userString !== null) {
+        //     user = JSON.parse(userString);
+        // }
+        // if (!user?.name || !user?.image) {
+        //     userAuthentication();
+        // }
+        // else {
             uploadData(values);
-        }
+        // }
     };
 
     const userAuthentication = () => {
