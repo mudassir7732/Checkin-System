@@ -40,7 +40,7 @@ const Home = () => {
       <Banner />
       <Box className={styles.heading}>
         <Typography className="text-[30px] font-[500] text-black">
-          Added CheckIns
+          Added CheckInssssssss
         </Typography>
         <Image alt="user" src='/assets/icons/menu.svg' width={19.13} height={15.94} className="mr-[12px] cursor-pointer" />
       </Box>
