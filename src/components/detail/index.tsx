@@ -52,7 +52,7 @@ const Detail: FC = () => {
         //     userAuthentication();
         // }
         // else {
-            uploadData(values);
+        uploadData(values);
         // }
     };
 
@@ -87,7 +87,6 @@ const Detail: FC = () => {
                 image: detailProps,
                 date: formattedDate,
             });
-            console.log('Success');
             setDetails(false);
             setSnackbarMessage('Successfully Updated');
         }
@@ -157,8 +156,7 @@ const Detail: FC = () => {
                                     </Box>
                                     <Box className={styles.buttonsWrapper}>
                                         <Button title='Cancel' type='reset' variant="outlined" className="h-[32px]" />
-                                        <Button title='Ok' type='submit' onClick={() => console.log(values, ' = Values')}
-                                            variant="contained" className="h-[32px]" />
+                                        <Button title='Ok' type='submit' variant="contained" className="h-[32px]" />
                                     </Box>
                                 </Form>
                             )}
