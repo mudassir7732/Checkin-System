@@ -104,7 +104,7 @@ const AddCheckIn: FC = () => {
             <Modal open={openCheckin} className={styles.modal}>
                 <>
                     {loading && <Loader />}
-                    <Box className={styles.Container}>
+                    <Box className={styles.container}>
                         <Box className={styles.header}>
                             <Typography className={styles.title}>
                                 Add Check In

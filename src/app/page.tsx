@@ -43,8 +43,8 @@ const Home = () => {
       <Box className="tw-flex tw-flex-col"> 
         <Banner />
         <Box className={styles.heading}>
-          <Typography className="tw-text-[40px] font-[500] text-black">
-            Added CheckInsss
+          <Typography className="tw-text-[40px] tw-font-[500] tw-text-black">
+            Added CheckIns
           </Typography>
           <Image
             unoptimized={true}

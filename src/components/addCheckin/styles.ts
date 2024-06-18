@@ -1,6 +1,6 @@
 const styles = {
     modal: "tw-w-fit tw-mx-auto tw-max-w-[699px] tw-outline-none tw-h-full tw-flex tw-justify-center tw-items-center",
-    Container: "tw-overflow-y-auto tw-z-30 tw-bg-white tw-mx-6 tw-border-[1px] tw-rounded-[20px] tw-max-w-[572px] tw-modal-content",
+    container: "tw-overflow-y-auto tw-z-30 tw-bg-white tw-mx-6 tw-border-[1px] tw-rounded-[20px] tw-max-w-[572px] tw-modal-content",
     header: "tw-flex tw-items-center tw-justify-between tw-px-[20.5px] tw-py-[16px] tw-bg-[#f8f8f8] tw-rounded-t-[20px]",
     title: "tw-text-[16px] tw-font-[600] tw-font-[Roboto Flex] tw-text-black",
     inputLabel: "tw-text-black tw-text-[16px] tw-font-[500] tw-mt-[20px] tw-mb-[15px]",
