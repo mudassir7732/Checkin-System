@@ -18,6 +18,7 @@ import { CheckInProps } from "@/types/checkIn";
 import { MyContext } from "@/context/store";
 import { userProps } from "@/types/user";
 import db from "@/firebase";
+import { setPriority } from "os";
 
 const INITIAL_VALUES: CheckInProps = {
     title: '',
@@ -108,8 +109,8 @@ const AddCheckIn: FC = () => {
                             <Typography className={styles.title}>
                                 Add Check In
                             </Typography>
-                            <Image alt="user" src='/assets/icons/cross.svg' width={11.31} height={11.64}
-                                className="h-[12px] w-[12px] cursor-pointer" onClick={() => setCheckin(false)} />
+                            <Image unoptimized={true} alt="user" src='/assets/icons/cross.svg' width={11.31} height={11.64}
+                                className="cursor-pointer" onClick={() => setCheckin(false)} />
                         </Box>
                         <Formik initialValues={INITIAL_VALUES}
                             validationSchema={VALIDATION_SCHEMA} onSubmit={handleInput}>
@@ -140,7 +141,7 @@ const AddCheckIn: FC = () => {
                                                     style={{ display: 'none', border: '2px solid red' }}
                                                 />
                                                 <Box onClick={() => document.getElementsByName('image')[0].click()} >
-                                                    <Image alt="user" src="/assets/icons/inbox.svg"
+                                                    <Image unoptimized={true} alt="user" src="/assets/icons/inbox.svg"
                                                         width={35.11}
                                                         height={35.51}
                                                         className="mt-[22.23px] mx-auto"
