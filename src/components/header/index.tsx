@@ -17,7 +17,7 @@ const Header: FC = () => {
 
   return (
     <Box className={styles.container}>
-      <Image unoptimized={true} alt="logo" src='/assets/logo/logo.svg' width={55} height={55} />
+      <Image unoptimized={true} alt="logo" src='/assets/logo/logo.svg' width={55} height={55} className="tw-cursor-pointer" />
       <Box className='tw-flex tw-flex-row tw-items-center'>
         <Button title='Feedback' variant="contained" className="tw-hidden sm:tw-block tw-mr-[25.12px]" type="button" />
         <Image unoptimized={true} alt="bell_icon" src='/assets/icons/Bell.svg' width={23.19} height={24} className={styles.bellIcon} />
@@ -29,7 +29,7 @@ const Header: FC = () => {
           width={42}
           className={styles.avatar}
         />
-        <Image unoptimized={true} alt="avatar" src='/assets/icons/menu-icon.svg' width={9.36} height={9} />
+        <Image unoptimized={true} alt="avatar" src='/assets/icons/menu-icon.svg' width={10} height={9} className="tw-cursor-pointer" />
       </Box>
     </Box>
   )

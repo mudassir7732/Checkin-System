@@ -117,7 +117,7 @@ const Detail: FC = () => {
                             {({ handleChange, handleSubmit, setFieldValue, handleReset, errors, touched, values }) => (
                                 <Form onSubmit={handleSubmit}>
                                     <Box className={styles.formWrapper}>
-                                        <Box className="w-[256px]">
+                                        <Box className="tw-w-[256px]">
                                             <Box className={styles.inputWrapper}>
                                                 <Typography className="tw-text-[16px] tw-font-[500] tw-text-black">
                                                     Booking ID

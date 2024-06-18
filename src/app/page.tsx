@@ -42,17 +42,17 @@ const Home = () => {
     data && (
       <Box className="tw-flex tw-flex-col"> 
         <Banner />
-        <Box className={styles.heading}>
-          <Typography className="tw-text-[40px] tw-font-[500] tw-text-black">
+        <Box className={styles.headingWrapper}>
+          <Typography className={styles.heading}>
             Added CheckIns
           </Typography>
           <Image
             unoptimized={true}
             alt="user"
             src="/assets/icons/menu.svg"
-            width={19.13}
-            height={15.94}
-            className="mr-[12px] cursor-pointer"
+            width={20}
+            height={16}
+            className="tw-mr-[12px] tw-cursor-pointer"
           />
         </Box>
         <Box className="flex justify-center">
