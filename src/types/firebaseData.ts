@@ -1,4 +1,4 @@
-export interface firebaseProps {
+export interface dataProps {
     name: string;
     avatar: string;
     owner: string;

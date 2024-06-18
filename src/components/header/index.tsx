@@ -17,19 +17,19 @@ const Header: FC = () => {
 
   return (
     <Box className={styles.container}>
-      <Image alt="user" src='/assets/logo/logo.svg' width={53.19} height={55} className="h-[54px] w-[53.19px]" />
+      <Image unoptimized={true} alt="user" src='/assets/logo/logo.svg' width={53.19} height={55} />
       <Box className='flex flex-row items-center'>
         <Button title='Feedback' variant="contained" className="hidden sm:block mr-[25.12px]" type="button" />
-        <Image alt="user" src='/assets/icons/Bell.svg' width={23.19} height={24} className={styles.bellIcon} />
-        <Image alt="user" src='/assets/icons/InfoCircle.svg' width={23.19} height={24} className={styles.infoIcon} />
-        <Image
+        <Image unoptimized={true} alt="user" src='/assets/icons/Bell.svg' width={23.19} height={24} className={styles.bellIcon} />
+        <Image unoptimized={true} alt="user" src='/assets/icons/InfoCircle.svg' width={23.19} height={24} className={styles.infoIcon} />
+        <Image unoptimized={true}
           alt="user"
           src='/assets/images/Avatar1.png'
           height={42}
           width={42}
           className={styles.avatar}
         />
-        <Image alt="avatar" src='/assets/icons/menu-icon.svg' width={9.36} height={9} className="h-[9px] w-[9.36px]" />
+        <Image unoptimized={true} alt="avatar" src='/assets/icons/menu-icon.svg' width={9.36} height={9} />
       </Box>
     </Box>
   )

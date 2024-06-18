@@ -13,7 +13,7 @@ const CheckinCard: FC<CheckinCardProps> = (props) => {
     return (
         <Box className={styles.container}>
             <Box key={id} className={styles.imageWrapper}>
-                <Image alt="user" src={image} width={271} height={160} className="object-cover h-full mx-auto" style={{ objectPosition: 'center' }} />
+                <Image unoptimized={true} alt="user" src={image} width={271} height={160} className="object-cover mx-auto" style={{ objectPosition: 'center' }} />
                 <Button title='Checked In' variant="contained" type="button" onClick={() => { setDetails(true); setDetailProps(image) }}
                     className={styles.button} />
             </Box>
@@ -24,7 +24,7 @@ const CheckinCard: FC<CheckinCardProps> = (props) => {
                 {date}
             </Typography>
             <Box className={styles.owner}>
-                <Image alt="user" src='/assets/images/Avatar2.png' width={32} height={32} className="rounded-full h-[32px] w-[32px]" />
+                <Image unoptimized={true} alt="user" src='/assets/images/Avatar2.png' width={32} height={32} className="rounded-full" />
                 <Typography className={styles.name}>
                     Owner: {owner}
                 </Typography>

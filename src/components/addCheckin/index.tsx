@@ -18,6 +18,7 @@ import { CheckInProps } from "@/types/checkIn";
 import { MyContext } from "@/context/store";
 import { userProps } from "@/types/user";
 import db from "@/firebase";
+import { setPriority } from "os";
 
 const INITIAL_VALUES: CheckInProps = {
     title: '',
@@ -35,7 +36,7 @@ const AddCheckIn: FC = () => {
     const { openCheckin, setCheckin } = useContext(MyContext);
 
     const handleInput = async (values: CheckInProps) => {
-        const user = {name:'John Doe', image:'https://firebasestorage.googleapis.com/v0/b/wonder-crafts-2c771.appspot.com/o/checkins%2Fe005d7db-26d7-43d3-abc3-b6adc6ab4ec7?alt=media&token=fb81d1af-ad55-4398-aa22-aa131578c91c'}
+        const user = { name: 'John Doe', image: 'https://firebasestorage.googleapis.com/v0/b/wonder-crafts-2c771.appspot.com/o/checkins%2Fe005d7db-26d7-43d3-abc3-b6adc6ab4ec7?alt=media&token=fb81d1af-ad55-4398-aa22-aa131578c91c' }
         // const userString = localStorage.getItem('user');
         // let user;
         // if (userString !== null) {
@@ -45,7 +46,7 @@ const AddCheckIn: FC = () => {
         //     userAuthentication();
         // }
         // else {
-            uploadData(values, user);
+        uploadData(values, user);
         // }
     };
 
@@ -88,10 +89,9 @@ const AddCheckIn: FC = () => {
             });
             setSnackbarMessage('Successfully Added');
             setCheckin(false);
-            console.log('Success')
         }
         catch (error) {
-            console.log('Failed', error);
+            setSnackbarMessage((error as Error)?.message || "Error occured");
         }
         finally {
             setLoading(false);
@@ -109,8 +109,8 @@ const AddCheckIn: FC = () => {
                             <Typography className={styles.title}>
                                 Add Check In
                             </Typography>
-                            <Image alt="user" src='/assets/icons/cross.svg' width={11.31} height={11.64}
-                                className="h-[12px] w-[12px] cursor-pointer" onClick={() => setCheckin(false)} />
+                            <Image unoptimized={true} alt="user" src='/assets/icons/cross.svg' width={11.31} height={11.64}
+                                className="cursor-pointer" onClick={() => setCheckin(false)} />
                         </Box>
                         <Formik initialValues={INITIAL_VALUES}
                             validationSchema={VALIDATION_SCHEMA} onSubmit={handleInput}>
@@ -141,7 +141,7 @@ const AddCheckIn: FC = () => {
                                                     style={{ display: 'none', border: '2px solid red' }}
                                                 />
                                                 <Box onClick={() => document.getElementsByName('image')[0].click()} >
-                                                    <Image alt="user" src="/assets/icons/inbox.svg"
+                                                    <Image unoptimized={true} alt="user" src="/assets/icons/inbox.svg"
                                                         width={35.11}
                                                         height={35.51}
                                                         className="mt-[22.23px] mx-auto"

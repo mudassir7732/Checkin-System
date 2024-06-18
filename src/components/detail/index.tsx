@@ -52,7 +52,7 @@ const Detail: FC = () => {
         //     userAuthentication();
         // }
         // else {
-            uploadData(values);
+        uploadData(values);
         // }
     };
 
@@ -87,7 +87,6 @@ const Detail: FC = () => {
                 image: detailProps,
                 date: formattedDate,
             });
-            console.log('Success');
             setDetails(false);
             setSnackbarMessage('Successfully Updated');
         }
@@ -110,8 +109,8 @@ const Detail: FC = () => {
                             <Typography className={styles.heading}>
                                 Detail
                             </Typography>
-                            <Image alt="user" src='/assets/icons/cross.svg' width={11.31} height={11.64}
-                                onClick={() => setDetails(false)} className="h-[12px] w-[12px] cursor-pointer" />
+                            <Image unoptimized={true} alt="user" src='/assets/icons/cross.svg' width={11.31} height={11.64}
+                                onClick={() => setDetails(false)} className="cursor-pointer" />
                         </Box>
 
                         <Formik initialValues={INITIAL_VALUES} validationSchema={VALIDATION_SCHEMA} onSubmit={handleBooking}>
@@ -153,12 +152,11 @@ const Detail: FC = () => {
                                                 />
                                             </Box>
                                         </Box>
-                                        <Image alt="user" src={detailProps} width={256} height={134} className="object-cover h-[134px] max-w-[256px] rounded-[18px]" />
+                                        <Image unoptimized={true} alt="user" src={detailProps} width={256} height={134} className="object-cover rounded-[18px]" />
                                     </Box>
                                     <Box className={styles.buttonsWrapper}>
                                         <Button title='Cancel' type='reset' variant="outlined" className="h-[32px]" />
-                                        <Button title='Ok' type='submit' onClick={() => console.log(values, ' = Values')}
-                                            variant="contained" className="h-[32px]" />
+                                        <Button title='Ok' type='submit' variant="contained" className="h-[32px]" />
                                     </Box>
                                 </Form>
                             )}
