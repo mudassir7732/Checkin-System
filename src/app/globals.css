@@ -28,10 +28,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.loader{
-  pointer-events: none;
-}
-
 .modal{
   pointer-events: auto;
 }
