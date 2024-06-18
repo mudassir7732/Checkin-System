@@ -1,6 +1,6 @@
 const styles={
-    container:"loader fixed top-0 left-0 w-full h-full z-50 flex justify-center items-center bg-black bg-opacity-50",
-    firstBlock:"h-24 w-24 rounded-full border-t-8 border-b-8 border-gray-200",
-    secondBlock:"absolute top-0 left-0 h-24 w-24 rounded-full border-t-8 border-b-8 border-blue-500 animate-spin",
+    container:"loader tw-fixed tw-top-0 tw-left-0 tw-w-full tw-h-full tw-z-50 tw-flex tw-justify-center tw-items-center tw-bg-black tw-bg-opacity-50",
+    firstBlock:"tw-h-24 tw-w-24 tw-rounded-full tw-border-t-8 tw-border-b-8 tw-border-gray-200",
+    secondBlock:"tw-absolute tw-top-0 tw-left-0 tw-h-24 tw-w-24 tw-rounded-full tw-border-t-8 tw-border-b-8 tw-border-blue-500 animate-spin",
 }
 export default styles;

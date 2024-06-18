@@ -110,7 +110,7 @@ const Detail: FC = () => {
                                 Detail
                             </Typography>
                             <Image unoptimized={true} alt="user" src='/assets/icons/cross.svg' width={11.31} height={11.64}
-                                onClick={() => setDetails(false)} className="cursor-pointer" />
+                                onClick={() => setDetails(false)} className="tw-cursor-pointer" />
                         </Box>
 
                         <Formik initialValues={INITIAL_VALUES} validationSchema={VALIDATION_SCHEMA} onSubmit={handleBooking}>
@@ -119,28 +119,28 @@ const Detail: FC = () => {
                                     <Box className={styles.formWrapper}>
                                         <Box className="w-[256px]">
                                             <Box className={styles.inputWrapper}>
-                                                <Typography className="text-[16px] font-[500] text-black">
+                                                <Typography className="tw-text-[16px] tw-font-[500] tw-text-black">
                                                     Booking ID
                                                 </Typography>
-                                                <TextInput name='bookingId' className='w-[133px] h-[32px]' placeholder="12345678" value={values.bookingId} onChange={handleChange} autoFocus={true}
+                                                <TextInput name='bookingId' className='tw-w-[133px] tw-h-[32px]' placeholder="12345678" value={values.bookingId} onChange={handleChange} autoFocus={true}
                                                     error={errors.bookingId && touched.bookingId} helperText={errors.bookingId && touched.bookingId && errors.bookingId} size="small" />
                                             </Box>
                                             <Box className={styles.inputWrapper}>
-                                                <Typography className="text-[16px] font-[500] text-black">
+                                                <Typography className="tw-text-[16px] tw-font-[500] tw-text-black">
                                                     Rooms
                                                 </Typography>
-                                                <TextInput name='rooms' className='w-[34px] h-[32px] mr-[23px]' placeholder="4" value={values.rooms} onChange={handleChange}
+                                                <TextInput name='rooms' className='tw-w-[34px] tw-h-[32px] tw-mr-[23px]' placeholder="4" value={values.rooms} onChange={handleChange}
                                                     error={errors.rooms && touched.rooms} helperText={errors.rooms && touched.rooms && errors.rooms} size="small" />
                                             </Box>
                                             <Box className={styles.inputWrapper}>
-                                                <Typography className="text-[16px] font-[500] text-black">
+                                                <Typography className="tw-text-[16px] tw-font-[500] tw-text-black">
                                                     Number of Guest
                                                 </Typography>
-                                                <TextInput name='guests' className='w-[34px] h-[32px] mr-[23px]' placeholder="4" value={values.guests} onChange={handleChange}
+                                                <TextInput name='guests' className='tw-w-[34px] tw-h-[32px] tw-mr-[23px]' placeholder="4" value={values.guests} onChange={handleChange}
                                                     error={errors.guests && touched.guests} helperText={errors.guests && touched.guests && errors.guests} size="small" />
                                             </Box>
                                             <Box className={styles.inputWrapper}>
-                                                <Typography className="text-[16px] font-[500] text-black">
+                                                <Typography className="tw-text-[16px] tw-font-[500] tw-text-black">
                                                     Booked Date
                                                 </Typography>
                                                 <input
@@ -152,11 +152,11 @@ const Detail: FC = () => {
                                                 />
                                             </Box>
                                         </Box>
-                                        <Image unoptimized={true} alt="user" src={detailProps} width={256} height={134} className="object-cover rounded-[18px]" />
+                                        <Image unoptimized={true} alt="user" src={detailProps} width={256} height={134} className="tw-object-cover tw-rounded-[18px]" />
                                     </Box>
                                     <Box className={styles.buttonsWrapper}>
-                                        <Button title='Cancel' type='reset' variant="outlined" className="h-[32px]" />
-                                        <Button title='Ok' type='submit' variant="contained" className="h-[32px]" />
+                                        <Button title='Cancel' type='reset' variant="outlined" className="tw-h-[32px]" />
+                                        <Button title='Ok' type='submit' variant="contained" className="tw-h-[32px]" />
                                     </Box>
                                 </Form>
                             )}

@@ -40,13 +40,20 @@ const Home = () => {
 
   return (
     data && (
-      <Fragment>
+      <Box className="tw-flex tw-flex-col"> 
         <Banner />
         <Box className={styles.heading}>
-          <Typography className="text-[30px] font-[500] text-black">
+          <Typography className="tw-text-[40px] font-[500] text-black">
             Added CheckInsss
           </Typography>
-          <Image unoptimized={true} alt="user" src='/assets/icons/menu.svg' width={19.13} height={15.94} className="mr-[12px] cursor-pointer" />
+          <Image
+            unoptimized={true}
+            alt="user"
+            src="/assets/icons/menu.svg"
+            width={19.13}
+            height={15.94}
+            className="mr-[12px] cursor-pointer"
+          />
         </Box>
         <Box className="flex justify-center">
           <Box className={styles.cardsContainer}>
@@ -64,7 +71,7 @@ const Home = () => {
           </Box>
         </Box>
         <Detail />
-      </Fragment>
+      </Box>
     )
   )
 }

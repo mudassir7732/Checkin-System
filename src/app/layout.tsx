@@ -13,7 +13,7 @@ export default function RootLayout({
 
   return (
     <html lang='en' >
-      <body className={`min-h-screen px-[46px] py-[26px] bg-white`}>
+      <body className="tw-min-h-screen tw-px-[46px] tw-py-[26px] tw-bg-white">
         <ThemeProvider theme={theme}>
           <MyContextProvider>
             <Header />

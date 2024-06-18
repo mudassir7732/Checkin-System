@@ -3,7 +3,7 @@ import styles from './styles';
 
 const Loader:FC = () => {
     return <div className={styles.container}>
-        <div className="relative">
+        <div className="tw-relative">
             <div className={styles.firstBlock} />
             <div className={styles.secondBlock} />
         </div>

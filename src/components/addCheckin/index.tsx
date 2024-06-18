@@ -110,13 +110,13 @@ const AddCheckIn: FC = () => {
                                 Add Check In
                             </Typography>
                             <Image unoptimized={true} alt="user" src='/assets/icons/cross.svg' width={11.31} height={11.64}
-                                className="cursor-pointer" onClick={() => setCheckin(false)} />
+                                className="tw-cursor-pointer" onClick={() => setCheckin(false)} />
                         </Box>
                         <Formik initialValues={INITIAL_VALUES}
                             validationSchema={VALIDATION_SCHEMA} onSubmit={handleInput}>
                             {({ handleChange, handleSubmit, setFieldValue, handleReset, errors, touched, values }) => (
                                 <Form onSubmit={handleSubmit}>
-                                    <Box className="px-[24px] pt-[24px] pb-[32px] outline-none max-w-[572px]">
+                                    <Box className="tw-px-[24px] tw-pt-[24px] tw-pb-[32px] tw-outline-none tw-max-w-[572px]">
                                         <Typography className={styles.inputLabel}>
                                             Title
                                         </Typography>
@@ -127,8 +127,8 @@ const AddCheckIn: FC = () => {
                                         <Typography className={styles.inputLabel}>
                                             Upload Image
                                         </Typography>
-                                        <Box className={`flex flex-col items-start w-full `}>
-                                            <Box className={`${styles.imageInput} ${errors.image ? 'border-[#d32f2f]' : 'border-[#b4b4b4]'} `}>
+                                        <Box className="tw-flex tw-flex-col tw-items-start tw-w-full">
+                                            <Box className={`${styles.imageInput} ${errors.image ? 'tw-border-[#d32f2f]' : 'tw-border-[#b4b4b4]'} `}>
                                                 <input
                                                     type="file"
                                                     name="image"
@@ -144,7 +144,7 @@ const AddCheckIn: FC = () => {
                                                     <Image unoptimized={true} alt="user" src="/assets/icons/inbox.svg"
                                                         width={35.11}
                                                         height={35.51}
-                                                        className="mt-[22.23px] mx-auto"
+                                                        className="tw-mt-[22.23px] tw-mx-auto"
                                                     />
                                                     <Typography className={styles.inputText1}>
                                                         Click or drag file to this area to upload
@@ -162,9 +162,9 @@ const AddCheckIn: FC = () => {
                                         </Box>
                                     </Box>
                                     <Box className={styles.buttonsWrapper}>
-                                        <Button title='Cancel' variant="outlined" className="h-[32px]" type="reset" />
+                                        <Button title='Cancel' variant="outlined" className="tw-h-[32px]" type="reset" />
                                         <Button title='Ok' type='submit'
-                                            variant="contained" className="h-[32px]" />
+                                            variant="contained" className="tw-h-[32px]" />
                                     </Box>
                                 </Form>
                             )}

@@ -16,7 +16,9 @@ const Banner: FC = () => {
   }
 
   return (
-    <Box className={styles.container}>
+    <Box className={styles.container}
+      style={{ backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/assets/images/banner-crop.png)' }}
+    >
       <Typography className={styles.title}>
         {/* Hi!👋{user?.name} */}
         Hi!👋John Doe

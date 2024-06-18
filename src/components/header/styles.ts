@@ -1,7 +1,7 @@
 const styles={
-    container:"flex flex-row items-center justify-between px-[32.76px] h-[64px] mb-[25px] bg-white rounded-full header",
-    bellIcon:"hidden sm:block mr-[18.36px]",
-    infoIcon:"hidden sm:block mr-[21.26px]",
-    avatar:"mr-[9.1px] rounded-full"
+    container:"tw-flex tw-flex-row tw-items-center tw-justify-between tw-px-[32.76px] tw-h-[64px] tw-mb-[25px] tw-bg-white tw-rounded-full tw-header",
+    bellIcon:"tw-hidden sm:tw-block tw-mr-[18.36px]",
+    infoIcon:"tw-hidden sm:tw-block tw-mr-[21.26px]",
+    avatar:"tw-mr-[9.1px] tw-rounded-full"
 }
 export default styles;

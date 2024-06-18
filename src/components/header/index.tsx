@@ -18,8 +18,8 @@ const Header: FC = () => {
   return (
     <Box className={styles.container}>
       <Image unoptimized={true} alt="user" src='/assets/logo/logo.svg' width={53.19} height={55} />
-      <Box className='flex flex-row items-center'>
-        <Button title='Feedback' variant="contained" className="hidden sm:block mr-[25.12px]" type="button" />
+      <Box className='tw-flex tw-flex-row tw-items-center'>
+        <Button title='Feedback' variant="contained" className="tw-hidden sm:tw-block tw-mr-[25.12px]" type="button" />
         <Image unoptimized={true} alt="user" src='/assets/icons/Bell.svg' width={23.19} height={24} className={styles.bellIcon} />
         <Image unoptimized={true} alt="user" src='/assets/icons/InfoCircle.svg' width={23.19} height={24} className={styles.infoIcon} />
         <Image unoptimized={true}

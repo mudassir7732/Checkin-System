@@ -1,11 +1,11 @@
 const styles={
-    modal:"w-fit mx-auto max-w-[699px] outline-none h-full flex justify-center items-center",
-    container:"overflow-y-auto z-30 bg-white border-[1px] rounded-[20px] max-w-[699px] modal-content",
-    header:"flex items-center min-h-[64px] justify-between bg-[#f8f8f8] px-[27px] rounded-t-[20px]",
-    heading:"text-[16px] font-[600] font-[Roboto Flex] text-black",
-    formWrapper:"flex flex-col max-w-[699px] md:flex-row items-start outline-none justify-between pb-[40px] md:pb-[62px] pt-[30px] md:pt-[66px] pl-[48px] pr-[29px] gap-[10px] md:gap-[110px]",
-    inputWrapper:"flex flex-row items-center justify-between pb-[30px]",
-    dateInput:"w-[133px] h-[32px] pr-[10px] pl-[12px] text-[14px] font-[400] border-[1px] border-[#b4b4b4] rounded-[4px] focus:outline-[#7b5aff]",
-    buttonsWrapper:"flex items-center justify-end gap-[8px] p-[16px] rounded-b-[20px]"
+    modal:"tw-w-fit tw-mx-auto tw-max-w-[699px] tw-outline-none tw-h-full tw-flex tw-justify-center tw-items-center",
+    container:"tw-overflow-y-auto tw-z-30 tw-bg-white tw-border-[1px] tw-rounded-[20px] tw-max-w-[699px] tw-modal-content",
+    header:"tw-flex tw-items-center tw-min-h-[64px] tw-justify-between tw-bg-[#f8f8f8] tw-px-[27px] tw-rounded-t-[20px]",
+    heading:"tw-text-[16px] tw-font-[600] tw-font-[Roboto Flex] tw-text-black",
+    formWrapper:"tw-flex tw-flex-col tw-max-w-[699px] md:tw-flex-row tw-items-start tw-outline-none tw-justify-between tw-pb-[40px] md:tw-pb-[62px] tw-pt-[30px] tw-md:pt-[66px] tw-pl-[48px] tw-pr-[29px] tw-gap-[10px] md:tw-gap-[110px]",
+    inputWrapper:"tw-flex tw-flex-row tw-items-center tw-justify-between tw-pb-[30px]",
+    dateInput:"tw-w-[133px] tw-h-[32px] tw-pr-[10px] tw-pl-[12px] tw-text-[14px] tw-font-[400] tw-border-[1px] tw-border-[#b4b4b4] tw-rounded-[4px] focus:tw-outline-[#7b5aff]",
+    buttonsWrapper:"tw-flex tw-items-center tw-justify-end tw-gap-[8px] tw-p-[16px] tw-rounded-b-[20px]"
 }
 export default styles;
